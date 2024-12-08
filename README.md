@@ -1,6 +1,12 @@
-「A minimal Stable Fluids inspired fluid solver with Python and NumPy.」をもとに「Stormscapes: simulating cloud dynamics in the now」の論文の内容をコードとして再現し、openvdbとして出力したものになります.
+説明：
+「A minimal Stable Fluids inspired fluid solver with Python and NumPy.」をもとに「Stormscapes: simulating cloud dynamics in the now」の論文の内容をコードとして再現し、openvdbとして出力するコードになります。
+具体的な使い方を以下に示します。distディレクトリ内のmain.exeを実行すると、いくつかのパラメータの値の入力を求められます。各パラメータは以下のような特徴を持ち、値によって計算結果が変化します。
 
+φrel：地表面における湿度。０～１の値を持ち、大きいほど地表面に近い部分で雲ができやすくなる
+γheat：地表面の熱量を示すパラメータ。０～２程度の値を持ち、大きいほど地表面の温度が高くなる
+γvapor：地表面の水蒸気分布を示すパラメータ。０～１の値を持ち、大きいほど地表面から排出される水蒸気量が多くなり、系全体の雲の量が多くなりやすくなる。
 
+これを打ち込んだのち「calculation start!」のボタンを押すことで計算が実行され、結果となるvdbファイルがoutputに出力されます。通常は計算をして初めて結果が得られますが、事前に計算された結果がすでに格納されています。
 
 Citations:\
 [Stormscapes: simulating cloud dynamics in the now](https://dl.acm.org/doi/10.1145/3414685.3417801)
